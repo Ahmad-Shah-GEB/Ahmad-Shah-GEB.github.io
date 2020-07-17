@@ -2,8 +2,8 @@
  * ActivePresenter HTML5 Output File
  * Copyright (c) Atomi Systems, Inc. All rights reserved.
  * https://atomisystems.com/activepresenter/
- * Version: 8.0.7
- * Date: 2020.05.29
+ * Version: 8.1.0
+ * Date: 2020.07.16
  */
 .ap-no-select {
 	-webkit-touch-callout: none; /* iOS Safari */
@@ -498,6 +498,27 @@ video::-webkit-media-controls { /* hide media controls by default */
 
 .ap-popup *:focus {
 	outline: #808080 dotted 1px;
+}
+
+#UnmuteHint {
+	position:absolute;
+	top:20px;
+	left:0px;
+	width:100%;
+	height:auto;
+	z-index:8;
+	pointer-events:none;
+	text-align:right;
+	background-color:none;
+}
+
+#UnmuteHint > span {
+	background-color:rgba(255, 255, 255, 0.8);
+	padding:15px;
+	font-size:16px;
+	font-family:Arial;
+	border: 1px solid #777777;
+	margin:10px;
 }
 
 /* attached resources */
